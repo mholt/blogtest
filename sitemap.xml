@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://mholt.github.io/blogtest/</loc>
+    <lastmod>2014-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mholt.github.io/blogtest/blog/</loc>
+    <lastmod>2014-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mholt.github.io/blogtest/categories/</loc>
+    <lastmod>2014-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mholt.github.io/blogtest/blog/hello/</loc>
+    <lastmod>2014-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mholt.github.io/blogtest/categories/web-development/</loc>
+    <lastmod>2014-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mholt.github.io/blogtest/about/</loc>
+  </url><url>
+    <loc>https://mholt.github.io/blogtest/contact/</loc>
+  </url><url>
+    <loc>https://mholt.github.io/blogtest/tags/</loc>
+  </url><url>
+    <loc>https://mholt.github.io/blogtest/blog/title/</loc>
+  </url>
+</urlset>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Matt Holt</title>
+    <link>https://mholt.github.io/blogtest/blog/</link>
+    <description>Recent content in Blogs on Matt Holt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>frederik.ring@gmail.com (Matt Holt)</managingEditor>
+    <webMaster>frederik.ring@gmail.com (Matt Holt)</webMaster>
+    <copyright>© Matt Holt</copyright>
+    <lastBuildDate>Fri, 02 May 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://mholt.github.io/blogtest/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello, World!</title>
+      <link>https://mholt.github.io/blogtest/blog/hello/</link>
+      <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
+      <author>frederik.ring@gmail.com (Matt Holt)</author>
+      <guid>https://mholt.github.io/blogtest/blog/hello/</guid>
+      <description>My first post.</description>
+    </item>
+    
+    <item>
+      <title>Title</title>
+      <link>https://mholt.github.io/blogtest/blog/title/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>frederik.ring@gmail.com (Matt Holt)</author>
+      <guid>https://mholt.github.io/blogtest/blog/title/</guid>
+      <description>Testing test</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matt Holt</title>
+    <link>https://mholt.github.io/blogtest/</link>
+    <description>Recent content on Matt Holt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>frederik.ring@gmail.com (Matt Holt)</managingEditor>
+    <webMaster>frederik.ring@gmail.com (Matt Holt)</webMaster>
+    <copyright>© Matt Holt</copyright>
+    <lastBuildDate>Fri, 02 May 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://mholt.github.io/blogtest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello, World!</title>
+      <link>https://mholt.github.io/blogtest/blog/hello/</link>
+      <pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
+      <author>frederik.ring@gmail.com (Matt Holt)</author>
+      <guid>https://mholt.github.io/blogtest/blog/hello/</guid>
+      <description>My first post.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://mholt.github.io/blogtest/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>frederik.ring@gmail.com (Matt Holt)</author>
+      <guid>https://mholt.github.io/blogtest/about/</guid>
+      <description>I&amp;rsquo;m the most interesting man in the universe.
+I once made a mistake, just to see how it feels.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://mholt.github.io/blogtest/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>frederik.ring@gmail.com (Matt Holt)</author>
+      <guid>https://mholt.github.io/blogtest/contact/</guid>
+      <description>john.doe@example.com
++1 (555) 867-5309
+123 Sesame St
+New York, NY 10001</description>
+    </item>
+    
+    <item>
+      <title>Title</title>
+      <link>https://mholt.github.io/blogtest/blog/title/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>frederik.ring@gmail.com (Matt Holt)</author>
+      <guid>https://mholt.github.io/blogtest/blog/title/</guid>
+      <description>Testing test</description>
+    </item>
+    
+  </channel>
+</rss>
