@@ -1,64 +1,114 @@
-# Bliss Template
+# blogtest
 
-[bliss]: https://bliss.js.org
-[eon-screenshot]:
-  https://user-images.githubusercontent.com/2252601/128049346-f187bb73-8d05-47e5-8ef6-283d8517190a.png
+Good News: Your blog is ready!
 
-Want a blog like this? In about... 30 seconds from now?
+[github-io]: https://mholt.github.io/blogtest
+[bliss-new]: https://bliss.js.org/#/?o=mholt&r=blogtest&b=main&ght
+[gh-settings-pages]: https://github.com/mholt/blogtest/settings/pages
+[gh-actions]: https://github.com/mholt/blogtest/actions
+[content-dir]: /content/blog/
+[utterances-app]: https://github.com/apps/utterances
+[gh-issues]: https://github.com/mholt/blogtest/issues
 
-[![eon][eon-screenshot]](https://ryanburnette.com)
+Just a few steps to **Finish Up**:
 
-Sites using the eon theme:
+1. Enable **GitHub Pages**
+   - Visit [github.com/mholt/blogtest/settings/pages][gh-settings-pages]
+   - Select <kbd>Source</kbd> <kbd>Branch: gh-pages</kbd>
+   - Select <kbd>/ (root)</kbd> (default)
+   - <kbd>Save</kbd>
+2. **Create your First Post**
+   - Visit [bliss.js.org][bliss-new] to make your first post.
+     - [bliss.js.org/#/?o=mholt&r=blogtest&b=main&ght][bliss-new]
+3. **Enable Comments** (optional)
+   - Visit [github.com/apps/utterances][utterances-app]
+   - Click <kbd>Install</kbd>
+   - Select <kbd>mholt</kbd> and <kbd>blogtest</kbd>
+   - You're all set! Comments will become [issues][gh-issues] on _this_ repo!
+   - To **disable** comments, comment out `utterences_*` in `config.yaml`
 
-- [ryanburnette.com](https://ryanburnette.com)
-- [therootcompany.com](https://therootcompany.com)
+## View Blog
 
-### Features
+You can view your blog at [mholt.github.io/blogtest][github-io].
 
-- [x] 0 Configuration (`config.yaml` builds itself)
-- [x] Web interface (Bliss) and CLI tools (Hugo)
-- [x] Build at Home (localhost) or Abroad (GitHub Actions)
-- [x] Built-in Edit links
+<!--
+  TODO edge case:
+  https://mholt.github.io/mholt.github.io/
+  is actually
+  https://mholt.github.io/
+-->
 
-## Make it Yours
+## [New Post][bliss-new]
 
-1. GitHub Templates:
-   <kbd><a href="https://github.com/BeyondCodeBootcamp/bliss-template/generate">Use
-   this template</a></kbd>
-2. Pick a name - probably `blog` (or something else real nice and simple like)
-   - (it will deploy to `https://<owner>.github.io/<repo>`)
-3. **Wait 30 seconds**, and your blog will be ready.
-   - See **next steps** in the new README.md!
+You can make new blog posts as easy as Gists. Just write your ~~tweet~~ post,
+and Bliss will fill out the Front Matter for you.
 
-## Has it been 30 seconds?
+1. 🔎 Type <kbd>bli</kbd> in your browser's omnibar and hit <kbd>enter</kbd>
+   - (or visit [bliss.js.org][bliss-new] directly)
+2. 📝 Write your post
+3. 💾 Click <kbd>Add to Github</kbd>, and then <kbd>Commit new file</kbd>
 
-Are you seeing this default README after created a new repo from our template?
+Your new post will build automatically.
 
-**Refresh the page** ♻️.
+## Edit Post
 
-You can also check you <kbd>Actions</kbd> tab. If the automatic configuration
-failed
-[open an issue](https://github.com/BeyondCodeBootcamp/bliss-template/issues) and
-I'll see if I can help.
+Manage your existing posts directly on GitHub. \
+Don't worry, `.GitInfo.lastmod` will pull the new "updated at" date from `git`!
 
-## What's Next?
+> [/content/blog/][content-dir]
 
-A new `README.md` with additional instructions will appear in your new repo
-about **30s after** you click
-<kbd><a href="https://github.com/BeyondCodeBootcamp/bliss-template/generate">Use
-this template</a></kbd>.
+Just click edit, then edit and commit!
 
-It will contain **direct links** into your GitHub Pages Settings to click a few
-buttons. No muss, no fuss (and no searching for the right page).
+# Manual Builds
 
-Basically, you'll do this:
+It's always nice to know that when the 💩 hits the fan, you can still get 💩
+done all on your own.
 
-- [ ] Enable GitHub Pages for your default branch
-  - <kbd>Settings</kbd> ➡️ <kbd>Pages</kbd> (left-hand side) ➡️ <kbd>Branch:
-    gh-pages</kbd>
-- [ ] Enable GitHub Issues as comments via [utterences](https://utterenc.es)
-- [ ] Create your first post using [bliss.js.org][bliss] as a front-end
-  - The **New Post** link in the `README` will be pre-filled with your blog's
-    repo.
+1. Edit `config.yaml` to taste... \
+   or `bash ./scripts/ga-template.sh`.
+2. Install `hugo` and `node` via Webi:
+   ```bash
+   curl -sS https://webinstall.dev/hugo@v0.86 | bash
+   curl -sS https://webinstall.dev/node@v16 | bash
+   # or
+   # bash ./scripts/install-deps.sh
+   ```
+3. Clone and setup repo
+   ```bash
+   git clone git@github.com:mholt/blogtest
+   pushd ./blogtest
+   git submodule init
+   git submodule update
+   hugo
+   # or
+   # bash ./scripts/build.sh
+   ```
+4. Inspect the build
+   ```bash
+   ls ./public
+   ```
+5. Deploy to GitHub pages
+   ```bash
+   git checkout gh-pages
+   rsync -avhP public/ ./
+   rm -rf public/
+   git add ./
+   git commit -m "deploy: latest build"
+   git push
+   # or
+   # bash ./scripts/deploy.sh
+   ```
 
-Your site will be available at <kbd>https://{owner}.github.io/{repo}/</kbd>.
+## Troubleshooting
+
+**Don't see `gh-pages`?**
+
+Generally the <kbd>Use this template</kbd> process takes about 30s. You check to
+see if it's complete at [github.com/mholt/blogtest/actions][gh-actions].
+
+Once the Action finishes it may take up to 5 minutes for the first Pages deploy
+to complete.
+
+**Something else wrong?**
+
+Open an issue on <https://github.com/BeyondCodeBootcamp/bliss-template>.

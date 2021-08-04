@@ -1,22 +1,22 @@
-title: "<name>"
+title: "Matt Holt"
 theme: "eon"
-baseURL: "https://<owner>.github.io/<repo>"
+baseURL: "https://mholt.github.io/blogtest"
 #baseURL: 'http://localhost:8801'
 # for multiple authors, see
 # https://discourse.gohugo.io/t/site-author-usage/31459/8?u=coolaj86
 Author:
-  name: "<name>"
-  email: "<email>"
-copyright: "© <name>"
+  name: "Matt Holt"
+  email: "frederik.ring@gmail.com"
+copyright: "© Matt Holt"
 languageCode: "en-us"
 
 Params:
   gravatar: true
   show_edit: "Suggest Edit"
-  git_repo: "https://github.com/<owner>/<repo>"
-  git_branch: "<branch>"
+  git_repo: "https://github.com/mholt/blogtest"
+  git_branch: "main"
   git_host: "github"
-  utterences_repo: "<owner>/<repo>"
+  utterences_repo: "mholt/blogtest"
   utterences_term: "pathname"
   enableGitInfo: true
   enableEmoji: true
